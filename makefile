@@ -30,12 +30,11 @@ pull:
     --include "Store9.java"            \
     --exclude "*"                      \
     ../../../examples/java/ examples
-
-#	@rsync -r -t -u -v --delete        \
-#    --include "SingletonPattern.java"  \
-#    --include "SingletonPatternT.java" \
-#    --exclude "*"                      \
-#    ../../../exercises/java/ exercises
+	@rsync -r -t -u -v --delete        \
+    --include "SingletonPattern.java"  \
+    --include "SingletonPatternT.java" \
+    --exclude "*"                      \
+    ../../../exercises/java/ exercises
 
 push:
 	make clean
