@@ -2,6 +2,8 @@
 // SingletonPatternT.java
 // ----------------------
 
+// https://en.wikipedia.org/wiki/Singleton_pattern
+
 final class SingletonPatternT {
     public static void main (String[] args) {
         System.out.println("SingletonPatternT.java");

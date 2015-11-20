@@ -1,6 +1,8 @@
 FILES :=
 
 #    SingletonPattern
+#    FactoryMethodPattern
+#    AbstractFactoryPattern
 
 %.class: %.java
 	javac -Xlint $<

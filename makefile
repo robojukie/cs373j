@@ -15,25 +15,29 @@ init:
 	git push -u origin master
 
 pull:
-	@rsync -r -t -u -v --delete        \
-    --include "Store1.java"            \
-    --include "Store2.java"            \
-    --include "Store3.java"            \
-    --include "Store4.java"            \
-    --include "Store5.java"            \
-    --include "Store6.java"            \
-    --include "MethodOverriding1.java" \
-    --include "MethodOverriding2.java" \
-    --include "Store7.java"            \
-    --include "Reflection.java"        \
-    --include "Store8.java"            \
-    --include "Store9.java"            \
-    --exclude "*"                      \
+	@rsync -r -t -u -v --delete              \
+    --include "Store1.java"                  \
+    --include "Store2.java"                  \
+    --include "Store3.java"                  \
+    --include "Store4.java"                  \
+    --include "Store5.java"                  \
+    --include "Store6.java"                  \
+    --include "MethodOverriding1.java"       \
+    --include "MethodOverriding2.java"       \
+    --include "Store7.java"                  \
+    --include "Reflection.java"              \
+    --include "Store8.java"                  \
+    --include "Store9.java"                  \
+    --exclude "*"                            \
     ../../../examples/java/ examples
-	@rsync -r -t -u -v --delete        \
-    --include "SingletonPattern.java"  \
-    --include "SingletonPatternT.java" \
-    --exclude "*"                      \
+	@rsync -r -t -u -v --delete              \
+    --include "SingletonPattern.java"        \
+    --include "SingletonPatternT.java"       \
+    --include "FactoryMethodPattern.java"    \
+    --include "FactoryMethodPatternT.java"   \
+    --include "AbstractFactoryPattern.java"  \
+    --include "AbstractFactoryPatternT.java" \
+    --exclude "*"                            \
     ../../../exercises/java/ exercises
 
 push:
