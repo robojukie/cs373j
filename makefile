@@ -33,6 +33,7 @@ pull:
 	@rsync -r -t -u -v --delete              \
     --include "SingletonPattern.java"        \
     --include "SingletonPatternT.java"       \
+    --include "CreationalPatterns.java"        \
     --include "FactoryMethodPattern.java"    \
     --include "FactoryMethodPatternT.java"   \
     --include "AbstractFactoryPattern.java"  \
